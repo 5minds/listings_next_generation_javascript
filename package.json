@@ -1,0 +1,24 @@
+{
+  "name": "NextGenerationJavaScript",
+  "version": "0.0.0",
+  "description": "Listings of the article for the next generation JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/5minds/listings_next_generation_javascript.git"
+  },
+  "keywords": [
+    "javascript",
+    "es6",
+    "samples"
+  ],
+  "author": "martin.moellenbeck@5minds.de",
+  "license": "C",
+  "bugs": {
+    "url": "https://github.com/5minds/listings_next_generation_javascript/issues"
+  },
+  "homepage": "https://github.com/5minds/listings_next_generation_javascript"
+}
