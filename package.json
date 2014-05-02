@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/5minds/listings_next_generation_javascript/issues"
   },
-  "homepage": "https://github.com/5minds/listings_next_generation_javascript"
+  "homepage": "https://github.com/5minds/listings_next_generation_javascript",
+  "dependencies": {
+    "traceur": "0.0.39"
+  }
 }
