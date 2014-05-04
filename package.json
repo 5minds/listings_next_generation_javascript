@@ -22,6 +22,10 @@
   },
   "homepage": "https://github.com/5minds/listings_next_generation_javascript",
   "dependencies": {
+    "es6-collections": "^0.2.0",
+    "es6-map-shim": "^0.2.1",
+    "es6-shim": "^0.10.1",
+    "harmony-collections": "^0.3.8",
     "traceur": "0.0.39"
   }
 }

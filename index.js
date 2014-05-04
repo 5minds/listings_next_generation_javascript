@@ -7,18 +7,24 @@ var path = require('path');
 traceur.options.experimental = true;
 
 traceur.require.makeDefault(function(filename) {
-  // require aus node.js fuer alle Dateien ueberschreiben
-  return true;
+    // Ausnahmen definieren.
+
+    // require aus node.js fuer alle anderen Dateien ueberschreiben
+    return true;
 });
 
 if (process.argv.length === 3) {
-	var filename = process.argv[2];
+    var filename = process.argv[2];
 
-	require(filename);
+    if (filename.indexOf("./") !== 0) {
+        filename = "./" + filename;
+    }
+
+    require(filename);
 } else {
-	console.log("ERROR: ");
-	console.log("    using " + path.basename(__filename) + " <filename to use>.");
-	console.log("");
-	console.log("    sample: " + path.basename(__filename) + " ./variables/sample_let.js");
-	process.exit();
+    console.log("ERROR: ");
+    console.log("    using " + path.basename(__filename) + " <filename to use>.");
+    console.log("");
+    console.log("    sample: " + path.basename(__filename) + " variables/sample_let.js");
+    process.exit();
 }

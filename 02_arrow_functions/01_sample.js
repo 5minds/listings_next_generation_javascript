@@ -1,18 +1,18 @@
 // bad sample
 var badObj = {
-	name: "Holger",
+    name: "Holger",
 
-	handleMessage: function(msg, callback) {
-		callback(msg);
-	},
+    handleMessage: function(msg, callback) {
+        callback(msg);
+    },
 
-	doIt: function() {
-		var that = this;
+    doIt: function() {
+        var that = this;
 
-		this.handleMessage("Hi ", function(msg) {
-			console.log(msg + that.name);
-		});
-	}
+        this.handleMessage("Hi ", function(msg) {
+            console.log(msg + that.name);
+        });
+    }
 };
 
 badObj.doIt();
@@ -20,21 +20,21 @@ badObj.doIt();
 
 // good sample
 var goodObj = {
-	name: "Martin",
+    name: "Martin",
 
-	handleMessage: function(msg, callback) {
-		callback(msg);
-	},
+    handleMessage: function(msg, callback) {
+        callback(msg);
+    },
 
-	doIt: function() {
-		// lange Schreibweise
-		this.handleMessage("Guten Tag ", (msg) => {
-			console.log(msg + this.name);
-		});
+    doIt: function() {
+        // lange Schreibweise
+        this.handleMessage("Guten Tag ", (msg) => {
+            console.log(msg + this.name);
+        });
 
-		// kurze Schreibweise
-		this.handleMessage("Hi ", msg => console.log(msg + this.name));
-	}
+        // kurze Schreibweise
+        this.handleMessage("Hi ", msg => console.log(msg + this.name));
+    }
 
 };
 

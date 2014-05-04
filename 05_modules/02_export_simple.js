@@ -1,4 +1,4 @@
-// 01_export.js
+// 02_export.js
 
 export var firstname = "Martin";
 export var lastname = "Möllenbeck";
