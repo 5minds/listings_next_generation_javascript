@@ -20,6 +20,7 @@ if (process.argv.length === 3) {
         filename = "./" + filename;
     }
 
+    // Laden der ES6 JavaScript-Datei
     require(filename);
 } else {
     console.log("ERROR: ");
