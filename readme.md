@@ -11,7 +11,7 @@ Die Beispiel können wie folgt gestartet werden:
 	# Beispiel
 	>> node index.js 01_variables\01_simple_let_sample.js
 
-Eine Ausnahme sind die Beispiele zu den [Collections](08_collections), da diese noch nicht mit Traceur gemeinsam verwendet werden können. Hier ist der direkte Aufruf der JavaScript-Dateien notwendig:
+Eine Ausnahme sind die Beispiele zu den [Collections](09_collections), da diese noch nicht mit Traceur gemeinsam verwendet werden können. Hier ist der direkte Aufruf der JavaScript-Dateien notwendig:
 	
 	 >> node 08_collections\01_map.js
 
