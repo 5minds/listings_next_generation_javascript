@@ -16,6 +16,10 @@ class Auto {
 
         this._aktuelle_geschwindigkeit = value;
     }
+
+    drive() {
+        console.log("Fahre " + this._aktuelle_geschwindigkeit + ".");
+    }
 }
 
 class LKW extends Auto {
@@ -44,6 +48,13 @@ class PKW extends Auto {
 
         this._aktuelle_geschwindigkeit = value;
     }
+
+    drive() {
+        super();
+        if (this._aktuelle_geschwindigkeit > 130) {
+            console.log("Bei einem Umfall muss mit der Zurechnung einer Teilschuld gerechnet werden.")
+        }
+    }
 }
 
 let lkw = new LKW();
@@ -51,6 +62,10 @@ let pkw = new PKW(250);
 
 lkw.aktuelle_geschwindigkeit = 75;
 console.log(lkw.aktuelle_geschwindigkeit);
+lkw.drive();
+
 
 pkw.aktuelle_geschwindigkeit = 180;
 console.log(pkw.aktuelle_geschwindigkeit);
+pkw.drive();
+
