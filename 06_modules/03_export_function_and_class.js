@@ -1,6 +1,6 @@
 
 export var fkt = function(name) {
-    console.log("hello " + name);
+    console.log("Hallo " + name);
 };
 
 export class MyClass {

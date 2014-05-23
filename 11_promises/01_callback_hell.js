@@ -1,6 +1,6 @@
 function timeout(name, duration, callback) {
     let doTimeout = function() {
-        console.log("doTimeout "+ name + " called.");
+        console.log("doTimeout "+ name + " aufgerufen.");
         callback(null);
     };
 
@@ -8,19 +8,19 @@ function timeout(name, duration, callback) {
 }
 
 try {
-    timeout("to_1", 100, (err) => {
+    timeout("zu_1", 100, (err) => {
         if (err) {
             console.log(err);
         } else {
-            timeout("to_2", 200, (err) => {
+            timeout("zu_2", 200, (err) => {
                 if (err) {
                     console.log(err);
                 } else {
-                    timeout("to_3", 300, (err) => {
+                    timeout("zu_3", 300, (err) => {
                         if (err) {
                             console.log(err);
                         } else {
-                            console.log("callback's done ;-)");
+                            console.log("callback's erledigt ;-)");
                         }
                     });
                 }
@@ -28,5 +28,5 @@ try {
         }
     });
 } catch (err) {
-    console.log("ERR: " + err);
+    console.log("Fehler: " + err);
 }

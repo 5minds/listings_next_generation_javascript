@@ -1,5 +1,5 @@
 var s = Symbol('prop');
-var s2 = Symbol('prop')
+var s2 = Symbol('prop');
 
 var object = {};
 object[s] = 42;

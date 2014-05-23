@@ -1,18 +1,18 @@
-// bad sample
-var bad_message = "outer value";
+// Schlechtes Beispiel
+var bad_message = "äußere Wert";
 
 {
-    var bad_message = "inner value";
+    var bad_message = "innerer Wert";
 }
 
-console.log("BAD: " + bad_message);
+console.log("SCHLECHT: " + bad_message);
 
-// good sample
-let good_message = "outer value";
+// Gutes Beispiel
+let good_message = "äußere Wert";
 
 {
-    let good_message = "inner value";
+    let good_message = "innerer Wert";
 }
 
-console.log("GOOD: " + good_message);
+console.log("GUT: " + good_message);
 

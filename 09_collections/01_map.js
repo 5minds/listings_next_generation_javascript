@@ -12,8 +12,8 @@ m.forEach(function(item, key) {
 
 console.log("key2?: " + m.has("key2"));
 
-console.log("value of key2: " + m.get("key2"));
+console.log("wert von key2: " + m.get("key2"));
 
-console.log("delete key2: " + m.delete("key2"))
+console.log("lösche key2: " + m.delete("key2"))
 
 console.log("key2?: " + m.has("key2"));

@@ -8,5 +8,5 @@ s.add({hello: 'world'});
 console.log("a?: " + s.has('a'));
 
 s.forEach(function(item) {
-    console.log("item: " + JSON.stringify(item));
+    console.log("Eintrag: " + JSON.stringify(item));
 });

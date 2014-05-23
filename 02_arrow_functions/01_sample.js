@@ -1,4 +1,4 @@
-// bad sample
+// Schlechtes Beispiel
 var badObj = {
     name: "Holger",
 
@@ -18,7 +18,7 @@ var badObj = {
 badObj.doIt();
 
 
-// good sample
+// Gutes Beispiel
 var goodObj = {
     name: "Martin",
 
