@@ -8,6 +8,9 @@ traceur.options.experimental = true;
 
 traceur.require.makeDefault(function(filename) {
     // Ausnahmen definieren.
+    if (filename.indexOf("node_modules") != -1) {
+        return false;
+    }
 
     // require aus node.js fuer alle anderen Dateien ueberschreiben
     return true;

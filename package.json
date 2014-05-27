@@ -23,6 +23,7 @@
   "homepage": "https://github.com/5minds/listings_next_generation_javascript",
   "dependencies": {
     "es6-shim": "^0.10.1",
+    "moment": "^2.6.0",
     "traceur": "0.0.39"
   }
 }
